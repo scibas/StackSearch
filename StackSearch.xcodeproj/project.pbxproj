@@ -10,8 +10,14 @@
 		E59420211AAF61AD0005FD22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E59420201AAF61AD0005FD22 /* main.m */; };
 		E594202C1AAF61AD0005FD22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E594202B1AAF61AD0005FD22 /* Images.xcassets */; };
 		E594202F1AAF61AD0005FD22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E594202D1AAF61AD0005FD22 /* LaunchScreen.xib */; };
-		E594203B1AAF61AD0005FD22 /* StackSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E594203A1AAF61AD0005FD22 /* StackSearchTests.m */; };
 		E59420461AAF62730005FD22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E59420451AAF62730005FD22 /* AppDelegate.m */; };
+		E59420581AAF78180005FD22 /* SEApiKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = E59420571AAF78180005FD22 /* SEApiKeys.m */; };
+		E594205B1AAF78590005FD22 /* SEResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E594205A1AAF78590005FD22 /* SEResponse.m */; };
+		E594205F1AAF79070005FD22 /* SEUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E594205E1AAF79070005FD22 /* SEUser.m */; };
+		E59420611AAF79690005FD22 /* SEUserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E59420601AAF79690005FD22 /* SEUserTest.m */; };
+		E59420631AAF7CEF0005FD22 /* SEQuestionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E59420621AAF7CEF0005FD22 /* SEQuestionTest.m */; };
+		E59420661AAF7D3E0005FD22 /* SEQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = E59420651AAF7D3E0005FD22 /* SEQuestion.m */; };
+		E59420681AAF81170005FD22 /* SEResponseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E59420671AAF81170005FD22 /* SEResponseTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +38,19 @@
 		E594202E1AAF61AD0005FD22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E59420341AAF61AD0005FD22 /* StackSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59420391AAF61AD0005FD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E594203A1AAF61AD0005FD22 /* StackSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackSearchTests.m; sourceTree = "<group>"; };
 		E59420441AAF62730005FD22 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = class/AppDelegate.h; sourceTree = "<group>"; };
 		E59420451AAF62730005FD22 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = class/AppDelegate.m; sourceTree = "<group>"; };
+		E59420561AAF78180005FD22 /* SEApiKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEApiKeys.h; path = class/SEApiKeys.h; sourceTree = "<group>"; };
+		E59420571AAF78180005FD22 /* SEApiKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEApiKeys.m; path = class/SEApiKeys.m; sourceTree = "<group>"; };
+		E59420591AAF78590005FD22 /* SEResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEResponse.h; path = class/SEResponse.h; sourceTree = "<group>"; };
+		E594205A1AAF78590005FD22 /* SEResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEResponse.m; path = class/SEResponse.m; sourceTree = "<group>"; };
+		E594205D1AAF79070005FD22 /* SEUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEUser.h; path = class/SEUser.h; sourceTree = "<group>"; };
+		E594205E1AAF79070005FD22 /* SEUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEUser.m; path = class/SEUser.m; sourceTree = "<group>"; };
+		E59420601AAF79690005FD22 /* SEUserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEUserTest.m; sourceTree = "<group>"; };
+		E59420621AAF7CEF0005FD22 /* SEQuestionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEQuestionTest.m; sourceTree = "<group>"; wrapsLines = 0; };
+		E59420641AAF7D3E0005FD22 /* SEQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEQuestion.h; path = class/SEQuestion.h; sourceTree = "<group>"; };
+		E59420651AAF7D3E0005FD22 /* SEQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEQuestion.m; path = class/SEQuestion.m; sourceTree = "<group>"; };
+		E59420671AAF81170005FD22 /* SEResponseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEResponseTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +92,7 @@
 		E594201D1AAF61AD0005FD22 /* StackSearch */ = {
 			isa = PBXGroup;
 			children = (
+				E594205C1AAF78630005FD22 /* Model */,
 				E59420441AAF62730005FD22 /* AppDelegate.h */,
 				E59420451AAF62730005FD22 /* AppDelegate.m */,
 				E594202B1AAF61AD0005FD22 /* Images.xcassets */,
@@ -97,7 +114,9 @@
 		E59420371AAF61AD0005FD22 /* StackSearchTests */ = {
 			isa = PBXGroup;
 			children = (
-				E594203A1AAF61AD0005FD22 /* StackSearchTests.m */,
+				E59420601AAF79690005FD22 /* SEUserTest.m */,
+				E59420621AAF7CEF0005FD22 /* SEQuestionTest.m */,
+				E59420671AAF81170005FD22 /* SEResponseTest.m */,
 				E59420381AAF61AD0005FD22 /* Supporting Files */,
 			);
 			path = StackSearchTests;
@@ -109,6 +128,21 @@
 				E59420391AAF61AD0005FD22 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E594205C1AAF78630005FD22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E59420561AAF78180005FD22 /* SEApiKeys.h */,
+				E59420571AAF78180005FD22 /* SEApiKeys.m */,
+				E59420591AAF78590005FD22 /* SEResponse.h */,
+				E594205A1AAF78590005FD22 /* SEResponse.m */,
+				E594205D1AAF79070005FD22 /* SEUser.h */,
+				E594205E1AAF79070005FD22 /* SEUser.m */,
+				E59420641AAF7D3E0005FD22 /* SEQuestion.h */,
+				E59420651AAF7D3E0005FD22 /* SEQuestion.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +245,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E59420461AAF62730005FD22 /* AppDelegate.m in Sources */,
+				E59420581AAF78180005FD22 /* SEApiKeys.m in Sources */,
+				E594205B1AAF78590005FD22 /* SEResponse.m in Sources */,
 				E59420211AAF61AD0005FD22 /* main.m in Sources */,
+				E594205F1AAF79070005FD22 /* SEUser.m in Sources */,
+				E59420661AAF7D3E0005FD22 /* SEQuestion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E594203B1AAF61AD0005FD22 /* StackSearchTests.m in Sources */,
+				E59420611AAF79690005FD22 /* SEUserTest.m in Sources */,
+				E59420631AAF7CEF0005FD22 /* SEQuestionTest.m in Sources */,
+				E59420681AAF81170005FD22 /* SEResponseTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +436,7 @@
 				E59420401AAF61AD0005FD22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E59420411AAF61AD0005FD22 /* Build configuration list for PBXNativeTarget "StackSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +445,7 @@
 				E59420431AAF61AD0005FD22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
