@@ -85,4 +85,16 @@
     XCTAssertEqual(((SEQuestion *)sut.items[1]).questionTitle, _secondQuestionTitle);
 }
 
+- (void)testParsingPerformanceForlargeDateChunk{
+    
+    NSString *responseDictionaryPath = [[NSBundle mainBundle] pathForResource:@"SEFakeResponse" ofType:@"json"];
+    NSData* dictionaryData = [NSData dataWithContentsOfFile:responseDictionaryPath];
+
+    [self measureBlock:^{
+        NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:dictionaryData options:kNilOptions error:nil];
+        _responseDictionary = responseDictionary;
+    }];
+
+}
+
 @end
