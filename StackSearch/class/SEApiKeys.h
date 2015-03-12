@@ -25,3 +25,9 @@ FOUNDATION_EXPORT NSString *const SEQuestionTitle;
 #pragma mark - User
 FOUNDATION_EXPORT NSString *const SEUserNameKey;
 FOUNDATION_EXPORT NSString *const SEUserProfileImageUrl;
+
+#pragma mark - Search Sequest Parameters
+FOUNDATION_EXPORT NSString *const SESearchRequestPageParameter;
+FOUNDATION_EXPORT NSString *const SESearchRequestPageSizeParameter;
+FOUNDATION_EXPORT NSString *const SESearchRequestTitleParameter;
+FOUNDATION_EXPORT NSString *const SESearchRequestSiteParameter;

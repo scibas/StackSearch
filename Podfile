@@ -7,6 +7,6 @@ pod "AFNetworking", "~> 2.0"
 end
 
 target 'StackSearchTests' do
-
+pod "OHHTTPStubs"
 end
 

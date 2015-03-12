@@ -25,8 +25,8 @@
     
     SEUser *sut = [[SEUser alloc] initWithDictionary:inputDictionary];
     
-    XCTAssertEqual(sut.displayName, userName);
-    XCTAssertEqual(sut.userProfileImage.description, userProfileImage);
+    XCTAssertTrue([userName isEqualToString:sut.displayName]);
+    XCTAssertTrue([userProfileImage isEqualToString:sut.userProfileImage.description]);
     
 }
 

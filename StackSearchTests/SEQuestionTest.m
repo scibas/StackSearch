@@ -31,10 +31,10 @@
     
     SEQuestion *sut = [[SEQuestion alloc]  initWithDictionary:questionInputDictionary];
 
-    XCTAssertEqual(sut.questionTitle, questionTitle);
+    XCTAssertTrue([questionTitle isEqualToString: sut.questionTitle]);
     XCTAssertEqual(sut.isAnswered, isAnswered);
-    XCTAssertEqual(sut.questionOwner.displayName, userName);
-    XCTAssertEqual(sut.questionOwner.userProfileImage.description, userProfileImage);
+    XCTAssertTrue([userName isEqualToString:sut.questionOwner.displayName]);
+    XCTAssertTrue([userProfileImage isEqualToString:sut.questionOwner.userProfileImage.description]);
 }
 
 @end

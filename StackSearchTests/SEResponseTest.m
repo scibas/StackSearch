@@ -68,8 +68,8 @@
     SEResponse *sut = [[SEResponse alloc] initWithDictionary:_responseDictionary];
 
     XCTAssertEqual(sut.error_id, _error_id);
-    XCTAssertEqual(sut.error_message, _error_message);
-    XCTAssertEqual(sut.error_name, _error_name);
+    XCTAssertTrue([_error_message isEqualToString:sut.error_message]);
+    XCTAssertTrue([_error_name isEqualToString:sut.error_name]);
     XCTAssertEqual(sut.quota_max, _quota_max);
     XCTAssertEqual(sut.quota_remaining, _quota_remaining);
 }
@@ -81,13 +81,13 @@
     XCTAssertTrue(sut.items.count == 2);
     XCTAssertTrue([sut.items isKindOfClass:[NSArray class]]);
 
-    XCTAssertEqual(((SEQuestion *)sut.items[0]).questionTitle, _firstQuestionTitle);
-    XCTAssertEqual(((SEQuestion *)sut.items[1]).questionTitle, _secondQuestionTitle);
+    XCTAssertTrue([_firstQuestionTitle isEqualToString:((SEQuestion *)sut.items[0]).questionTitle]);
+    XCTAssertTrue([_secondQuestionTitle isEqualToString:((SEQuestion *)sut.items[1]).questionTitle]);
 }
 
 - (void)testParsingPerformanceForlargeDateChunk{
     
-    NSString *responseDictionaryPath = [[NSBundle mainBundle] pathForResource:@"SEFakeResponse" ofType:@"json"];
+    NSString *responseDictionaryPath = [[NSBundle bundleForClass:self.class] pathForResource:@"SEFakeResponse" ofType:@"json"];
     NSData* dictionaryData = [NSData dataWithContentsOfFile:responseDictionaryPath];
 
     [self measureBlock:^{
