@@ -21,6 +21,7 @@
         _questionTitle  = questionDictionary[SEQuestionTitle];
         _questionOwner  = [[SEUser alloc] initWithDictionary:questionDictionary[SEQuestionOwnerKey]];
         _tags           = questionDictionary[SEQuestionTags];
+        _link           = questionDictionary[SEQuestionLink];
     }
     
     return self;

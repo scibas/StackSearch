@@ -22,6 +22,7 @@ NSString *const SEQuestionOwnerKey              = @"owner";
 NSString *const SEQuestionIsAnsweredKey         = @"is_answered";
 NSString *const SEQuestionTitle                 = @"title";
 NSString *const SEQuestionTags                  = @"tags";
+NSString *const SEQuestionLink                  = @"link";
 
 #pragma mark - User
 NSString *const SEUserNameKey                   = @"display_name";

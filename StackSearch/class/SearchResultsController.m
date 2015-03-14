@@ -15,6 +15,7 @@
 #import "SEQuestion.h"
 #import "UIRefreshControl+AFNetworking.h"
 #import "SubtitleStyleCell+SEQuestion.h"
+#import "QuestionDetailController.h"
 
 static NSString *const kTableViewCellReuseIdentifier = @"TableViewCellReuseIdentifier";
 
@@ -55,6 +56,7 @@ static NSString *const kTableViewCellReuseIdentifier = @"TableViewCellReuseIdent
     searchController.dimsBackgroundDuringPresentation = NO;
     searchController.searchBar.delegate = self;
     searchController.delegate = self;
+    searchController.hidesNavigationBarDuringPresentation = NO;
     self.tableView.tableHeaderView = searchController.searchBar;
     self.searchController = searchController;
     
@@ -134,14 +136,12 @@ static NSString *const kTableViewCellReuseIdentifier = @"TableViewCellReuseIdent
     return self.response.items.count;
 }
 
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-//    DTOSEQuestion *selectedQuestion;
-//    DTOQuestionDetailsController *questionDitailsController = [[DTOQuestionDetailsController alloc] initWithQuestion:selectedQuestion];
-//    
-//    [self.navigationController pushViewController:questionDitailsController animated:YES];
+    SEQuestion *selectedQuestion = self.response.items[indexPath.row];
+    QuestionDetailController *questionDitailController = [[QuestionDetailController alloc] initWithQuestion:selectedQuestion];
     
+    [self.navigationController pushViewController:questionDitailController animated:YES];
 }
-
 
 @end
