@@ -97,6 +97,8 @@ static NSString *const kTableViewCellReuseIdentifier = @"TableViewCellReuseIdent
         [response mergeWithItems:self.response.items];
         [self manageResponse:response];
     }];
+    
+    self.lastSearchParameters = parameters;
 }
 
 -(void)manageResponse:(SEResponse *)response{
