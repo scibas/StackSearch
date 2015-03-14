@@ -149,14 +149,7 @@
 		E594201D1AAF61AD0005FD22 /* StackSearch */ = {
 			isa = PBXGroup;
 			children = (
-				E5D7A62F1AB225F200984046 /* SearchResultsController.h */,
-				E5D7A6301AB225F200984046 /* SearchResultsController.m */,
-				E594D2961AB45AB40011DCA3 /* SubtitleStyleCell.h */,
-				E594D29C1AB46A180011DCA3 /* QuestionDetailController.h */,
-				E594D29D1AB46A180011DCA3 /* QuestionDetailController.m */,
-				E594D2971AB45AB40011DCA3 /* SubtitleStyleCell.m */,
-				E594D2991AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.h */,
-				E594D29A1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m */,
+				E594D29F1AB484280011DCA3 /* Screens */,
 				E594205C1AAF78630005FD22 /* Model */,
 				E5D7A62E1AB2255D00984046 /* SearchEngine */,
 				E59420441AAF62730005FD22 /* AppDelegate.h */,
@@ -211,6 +204,45 @@
 				E59420651AAF7D3E0005FD22 /* SEQuestion.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		E594D29F1AB484280011DCA3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E594D2A01AB484320011DCA3 /* SearchResult */,
+				E594D2A11AB4844E0011DCA3 /* QuestionDetail */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		E594D2A01AB484320011DCA3 /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				E5D7A62F1AB225F200984046 /* SearchResultsController.h */,
+				E5D7A6301AB225F200984046 /* SearchResultsController.m */,
+				E594D2A21AB484600011DCA3 /* CustomViews */,
+			);
+			name = SearchResult;
+			sourceTree = "<group>";
+		};
+		E594D2A11AB4844E0011DCA3 /* QuestionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E594D29C1AB46A180011DCA3 /* QuestionDetailController.h */,
+				E594D29D1AB46A180011DCA3 /* QuestionDetailController.m */,
+			);
+			name = QuestionDetail;
+			sourceTree = "<group>";
+		};
+		E594D2A21AB484600011DCA3 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E594D2961AB45AB40011DCA3 /* SubtitleStyleCell.h */,
+				E594D2971AB45AB40011DCA3 /* SubtitleStyleCell.m */,
+				E594D2991AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.h */,
+				E594D29A1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m */,
+			);
+			name = CustomViews;
 			sourceTree = "<group>";
 		};
 		E5D7A62E1AB2255D00984046 /* SearchEngine */ = {
