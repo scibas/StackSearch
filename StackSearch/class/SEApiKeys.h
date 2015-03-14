@@ -21,6 +21,8 @@ FOUNDATION_EXPORT NSString *const SEResponseQuotaRemainingKey;
 FOUNDATION_EXPORT NSString *const SEQuestionOwnerKey;
 FOUNDATION_EXPORT NSString *const SEQuestionIsAnsweredKey;
 FOUNDATION_EXPORT NSString *const SEQuestionTitle;
+FOUNDATION_EXPORT NSString *const SEQuestionTags;
+FOUNDATION_EXPORT NSString *const SEQuestionLink;
 
 #pragma mark - User
 FOUNDATION_EXPORT NSString *const SEUserNameKey;

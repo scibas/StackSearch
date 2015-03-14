@@ -11,7 +11,7 @@
 @interface SearchEngineParametersBuilder : NSObject
 
 -(NSDictionary *)build;
--(instancetype)nextPage;
+-(NSDictionary *)nextPageFromParameters:(NSDictionary *)parameters;
 
 @property(nonatomic, copy) NSString *searchPhrase;
 @property(nonatomic, assign) NSInteger page;

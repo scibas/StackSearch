@@ -39,4 +39,11 @@
     return self;
 }
 
+-(void)mergeWithItems:(NSArray *)newItems{
+
+    if(newItems.count > 0){
+        _items = [newItems arrayByAddingObjectsFromArray:self.items];
+    }
+}
+
 @end

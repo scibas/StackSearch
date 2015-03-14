@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SearchResultsController.h"
 #import "AFNetworkActivityIndicatorManager.h"
 
 @interface AppDelegate ()
@@ -18,6 +19,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
+    
+    SearchResultsController *searchresultController = [[SearchResultsController alloc]initWithStyle:UITableViewStyleGrouped];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:searchresultController];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = navigationController;
+    
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

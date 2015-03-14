@@ -24,7 +24,11 @@
 		E594206B1AAF8F5F0005FD22 /* SearchEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E594206A1AAF8F5F0005FD22 /* SearchEngine.m */; };
 		E594206D1AAF91940005FD22 /* SearchEngineTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E594206C1AAF91940005FD22 /* SearchEngineTest.m */; };
 		E594206F1AAF931D0005FD22 /* SEFakeResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = E594206E1AAF931D0005FD22 /* SEFakeResponse.json */; };
+		E594D2981AB45AB40011DCA3 /* SubtitleStyleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E594D2971AB45AB40011DCA3 /* SubtitleStyleCell.m */; };
+		E594D29B1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = E594D29A1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m */; };
+		E594D29E1AB46A180011DCA3 /* QuestionDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = E594D29D1AB46A180011DCA3 /* QuestionDetailController.m */; };
 		E5D7A62D1AB219DE00984046 /* SearchEngineParametersBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A62C1AB219DE00984046 /* SearchEngineParametersBuilder.m */; };
+		E5D7A6311AB225F200984046 /* SearchResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A6301AB225F200984046 /* SearchResultsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +73,16 @@
 		E594206A1AAF8F5F0005FD22 /* SearchEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchEngine.m; path = class/SearchEngine.m; sourceTree = "<group>"; };
 		E594206C1AAF91940005FD22 /* SearchEngineTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchEngineTest.m; sourceTree = "<group>"; wrapsLines = 0; };
 		E594206E1AAF931D0005FD22 /* SEFakeResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SEFakeResponse.json; sourceTree = "<group>"; };
+		E594D2961AB45AB40011DCA3 /* SubtitleStyleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubtitleStyleCell.h; path = class/SubtitleStyleCell.h; sourceTree = "<group>"; };
+		E594D2971AB45AB40011DCA3 /* SubtitleStyleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubtitleStyleCell.m; path = class/SubtitleStyleCell.m; sourceTree = "<group>"; };
+		E594D2991AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SubtitleStyleCell+SEQuestion.h"; path = "class/SubtitleStyleCell+SEQuestion.h"; sourceTree = "<group>"; };
+		E594D29A1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SubtitleStyleCell+SEQuestion.m"; path = "class/SubtitleStyleCell+SEQuestion.m"; sourceTree = "<group>"; };
+		E594D29C1AB46A180011DCA3 /* QuestionDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionDetailController.h; path = class/QuestionDetailController.h; sourceTree = "<group>"; };
+		E594D29D1AB46A180011DCA3 /* QuestionDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionDetailController.m; path = class/QuestionDetailController.m; sourceTree = "<group>"; };
 		E5D7A62B1AB219DE00984046 /* SearchEngineParametersBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchEngineParametersBuilder.h; path = class/SearchEngineParametersBuilder.h; sourceTree = "<group>"; };
 		E5D7A62C1AB219DE00984046 /* SearchEngineParametersBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchEngineParametersBuilder.m; path = class/SearchEngineParametersBuilder.m; sourceTree = "<group>"; };
+		E5D7A62F1AB225F200984046 /* SearchResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchResultsController.h; path = class/SearchResultsController.h; sourceTree = "<group>"; };
+		E5D7A6301AB225F200984046 /* SearchResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchResultsController.m; path = class/SearchResultsController.m; sourceTree = "<group>"; };
 		F76B14F84B324480E9B04D61 /* Pods-StackSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StackSearchTests/Pods-StackSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,18 +149,14 @@
 		E594201D1AAF61AD0005FD22 /* StackSearch */ = {
 			isa = PBXGroup;
 			children = (
+				E594D29F1AB484280011DCA3 /* Screens */,
 				E594205C1AAF78630005FD22 /* Model */,
-				E5D7A62B1AB219DE00984046 /* SearchEngineParametersBuilder.h */,
-				E5D7A62C1AB219DE00984046 /* SearchEngineParametersBuilder.m */,
-				E59420691AAF8F5F0005FD22 /* SearchEngine.h */,
-				E594206A1AAF8F5F0005FD22 /* SearchEngine.m */,
+				E5D7A62E1AB2255D00984046 /* SearchEngine */,
 				E59420441AAF62730005FD22 /* AppDelegate.h */,
 				E59420451AAF62730005FD22 /* AppDelegate.m */,
 				E594202B1AAF61AD0005FD22 /* Images.xcassets */,
 				E594202D1AAF61AD0005FD22 /* LaunchScreen.xib */,
 				E594201E1AAF61AD0005FD22 /* Supporting Files */,
-				E51D4BFA1AB0CAC10047BD04 /* SESessionManager.h */,
-				E51D4BFB1AB0CAC10047BD04 /* SESessionManager.m */,
 			);
 			path = StackSearch;
 			sourceTree = "<group>";
@@ -196,6 +204,58 @@
 				E59420651AAF7D3E0005FD22 /* SEQuestion.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		E594D29F1AB484280011DCA3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E594D2A01AB484320011DCA3 /* SearchResult */,
+				E594D2A11AB4844E0011DCA3 /* QuestionDetail */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		E594D2A01AB484320011DCA3 /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				E5D7A62F1AB225F200984046 /* SearchResultsController.h */,
+				E5D7A6301AB225F200984046 /* SearchResultsController.m */,
+				E594D2A21AB484600011DCA3 /* CustomViews */,
+			);
+			name = SearchResult;
+			sourceTree = "<group>";
+		};
+		E594D2A11AB4844E0011DCA3 /* QuestionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E594D29C1AB46A180011DCA3 /* QuestionDetailController.h */,
+				E594D29D1AB46A180011DCA3 /* QuestionDetailController.m */,
+			);
+			name = QuestionDetail;
+			sourceTree = "<group>";
+		};
+		E594D2A21AB484600011DCA3 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E594D2961AB45AB40011DCA3 /* SubtitleStyleCell.h */,
+				E594D2971AB45AB40011DCA3 /* SubtitleStyleCell.m */,
+				E594D2991AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.h */,
+				E594D29A1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		E5D7A62E1AB2255D00984046 /* SearchEngine */ = {
+			isa = PBXGroup;
+			children = (
+				E51D4BFA1AB0CAC10047BD04 /* SESessionManager.h */,
+				E51D4BFB1AB0CAC10047BD04 /* SESessionManager.m */,
+				E5D7A62B1AB219DE00984046 /* SearchEngineParametersBuilder.h */,
+				E5D7A62C1AB219DE00984046 /* SearchEngineParametersBuilder.m */,
+				E59420691AAF8F5F0005FD22 /* SearchEngine.h */,
+				E594206A1AAF8F5F0005FD22 /* SearchEngine.m */,
+			);
+			name = SearchEngine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D7A6311AB225F200984046 /* SearchResultsController.m in Sources */,
 				E59420461AAF62730005FD22 /* AppDelegate.m in Sources */,
 				E5D7A62D1AB219DE00984046 /* SearchEngineParametersBuilder.m in Sources */,
 				E59420581AAF78180005FD22 /* SEApiKeys.m in Sources */,
@@ -373,6 +434,9 @@
 				E51D4BFC1AB0CAC10047BD04 /* SESessionManager.m in Sources */,
 				E594206B1AAF8F5F0005FD22 /* SearchEngine.m in Sources */,
 				E594205F1AAF79070005FD22 /* SEUser.m in Sources */,
+				E594D29B1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m in Sources */,
+				E594D2981AB45AB40011DCA3 /* SubtitleStyleCell.m in Sources */,
+				E594D29E1AB46A180011DCA3 /* QuestionDetailController.m in Sources */,
 				E59420661AAF7D3E0005FD22 /* SEQuestion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

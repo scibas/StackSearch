@@ -17,7 +17,7 @@ typedef void (^RequestCompletionBlock)(SEResponse *response, NSError *error);
 @interface SearchEngine : NSObject
 
 -(instancetype)initWithSessionManager:(AFHTTPSessionManager *)sessionManager;
--(void)performSearchWithParameters:(NSDictionary *)requestParameters completionBlock:(RequestCompletionBlock)completionBlock;
+-(NSURLSessionDataTask *)performSearchWithParameters:(NSDictionary *)requestParameters completionBlock:(RequestCompletionBlock)completionBlock;
 
 
 @end

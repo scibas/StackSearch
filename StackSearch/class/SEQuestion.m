@@ -17,10 +17,11 @@
     self = [super init];
     
     if(self){
-        _isAnswered = [questionDictionary[SEQuestionIsAnsweredKey] boolValue];
-        _questionTitle = questionDictionary[SEQuestionTitle];
-        NSDictionary *ownerDictionary = questionDictionary[SEQuestionOwnerKey];
-        _questionOwner = [[SEUser alloc] initWithDictionary:ownerDictionary];
+        _isAnswered     = [questionDictionary[SEQuestionIsAnsweredKey] boolValue];
+        _questionTitle  = questionDictionary[SEQuestionTitle];
+        _questionOwner  = [[SEUser alloc] initWithDictionary:questionDictionary[SEQuestionOwnerKey]];
+        _tags           = questionDictionary[SEQuestionTags];
+        _link           = questionDictionary[SEQuestionLink];
     }
     
     return self;
