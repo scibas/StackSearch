@@ -12,6 +12,8 @@
 
 -(instancetype)initWithDictionary:(NSDictionary*)responseDictionary;
 
+-(void)mergeWithItems:(NSArray *)items;
+
 @property(nonatomic, assign, readonly) NSInteger error_id;
 @property(nonatomic, strong, readonly) NSString *error_message;
 @property(nonatomic, strong, readonly) NSString *error_name;

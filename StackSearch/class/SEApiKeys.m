@@ -21,6 +21,7 @@ NSString *const SEResponseQuotaRemainingKey     = @"quota_remaining";
 NSString *const SEQuestionOwnerKey              = @"owner";
 NSString *const SEQuestionIsAnsweredKey         = @"is_answered";
 NSString *const SEQuestionTitle                 = @"title";
+NSString *const SEQuestionTags                  = @"tags";
 
 #pragma mark - User
 NSString *const SEUserNameKey                   = @"display_name";

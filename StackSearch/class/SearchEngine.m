@@ -24,22 +24,22 @@
     return self;
 }
 
--(void)performSearchWithParameters:(NSDictionary *)requestParameters completionBlock:(RequestCompletionBlock)completionBlock{
+-(NSURLSessionDataTask *)performSearchWithParameters:(NSDictionary *)requestParameters completionBlock:(RequestCompletionBlock)completionBlock{
 
     NSParameterAssert(self.sessionManager);
     
-    [self.sessionManager GET:@"search"
-                  parameters:requestParameters
-                     success:^(NSURLSessionDataTask *task, id responseObject) {
-                         SEResponse *response = [[SEResponse alloc] initWithDictionary:responseObject];
-                         if(completionBlock){
-                             completionBlock(response, nil);
-                         }
-                     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                         if(completionBlock){
-                             completionBlock(nil, error);
-                         }
-                     }];
+    return [self.sessionManager GET:@"search"
+                         parameters:requestParameters
+                            success:^(NSURLSessionDataTask *task, id responseObject) {
+                                SEResponse *response = [[SEResponse alloc] initWithDictionary:responseObject];
+                                if(completionBlock){
+                                    completionBlock(response, nil);
+                                }
+                            } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                                if(completionBlock){
+                                    completionBlock(nil, error);
+                                }
+                            }];
 }
 
 @end

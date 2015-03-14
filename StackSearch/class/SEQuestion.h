@@ -20,4 +20,6 @@
 
 @property(nonatomic, strong, readonly) NSString *questionTitle;
 
+@property(nonatomic, strong, readonly) NSArray *tags;
+
 @end

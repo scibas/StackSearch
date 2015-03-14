@@ -38,9 +38,14 @@
     return [result copy];
 }
 
--(instancetype)nextPage{
-    @throw [NSException exceptionWithName:@"Not implemented yet" reason:nil userInfo:nil];
-    return nil;
+-(NSDictionary *)nextPageFromParameters:(NSDictionary *)parameters{
+    NSMutableDictionary *newParameters = [parameters mutableCopy];
+    
+    //increase page number
+    NSNumber *currentPage = newParameters[SESearchRequestPageParameter];
+    newParameters[SESearchRequestPageParameter] = @(currentPage.integerValue + 1);
+
+    return [newParameters copy];
 }
 
 @end
