@@ -10,7 +10,6 @@
 		4D74EB49F6349DC458D259E5 /* libPods-StackSearchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 938A968129BD985232ACC473 /* libPods-StackSearchTests.a */; };
 		4DE8984780C0E4375AD1B80F /* libPods-StackSearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C27DDB933928BC9E0BDCADF2 /* libPods-StackSearch.a */; };
 		E51D4BFC1AB0CAC10047BD04 /* SESessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E51D4BFB1AB0CAC10047BD04 /* SESessionManager.m */; };
-		E51FC31C1AB4ECFA009DB98F /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = E51FC31B1AB4ECFA009DB98F /* NSString+HTML.m */; };
 		E59420211AAF61AD0005FD22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E59420201AAF61AD0005FD22 /* main.m */; };
 		E594202C1AAF61AD0005FD22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E594202B1AAF61AD0005FD22 /* Images.xcassets */; };
 		E594202F1AAF61AD0005FD22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E594202D1AAF61AD0005FD22 /* LaunchScreen.xib */; };
@@ -31,6 +30,7 @@
 		E5C6E8121AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C6E8111AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m */; };
 		E5D7A62D1AB219DE00984046 /* SearchEngineParametersBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A62C1AB219DE00984046 /* SearchEngineParametersBuilder.m */; };
 		E5D7A6311AB225F200984046 /* SearchResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A6301AB225F200984046 /* SearchResultsController.m */; };
+		E5F062DD1AB5B76A002E5AF5 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F062DC1AB5B76A002E5AF5 /* NSString+HTML.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,6 @@
 		C27DDB933928BC9E0BDCADF2 /* libPods-StackSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StackSearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51D4BFA1AB0CAC10047BD04 /* SESessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SESessionManager.h; path = class/SESessionManager.h; sourceTree = "<group>"; };
 		E51D4BFB1AB0CAC10047BD04 /* SESessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SESessionManager.m; path = class/SESessionManager.m; sourceTree = "<group>"; };
-		E51FC31A1AB4ECFA009DB98F /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
-		E51FC31B1AB4ECFA009DB98F /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
 		E594201B1AAF61AD0005FD22 /* StackSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E594201F1AAF61AD0005FD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E59420201AAF61AD0005FD22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +87,8 @@
 		E5D7A62C1AB219DE00984046 /* SearchEngineParametersBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchEngineParametersBuilder.m; path = class/SearchEngineParametersBuilder.m; sourceTree = "<group>"; };
 		E5D7A62F1AB225F200984046 /* SearchResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchResultsController.h; path = class/SearchResultsController.h; sourceTree = "<group>"; };
 		E5D7A6301AB225F200984046 /* SearchResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchResultsController.m; path = class/SearchResultsController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		E5F062DB1AB5B76A002E5AF5 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+HTML.h"; path = "class/NSString+HTML.h"; sourceTree = "<group>"; };
+		E5F062DC1AB5B76A002E5AF5 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+HTML.m"; path = "class/NSString+HTML.m"; sourceTree = "<group>"; };
 		F76B14F84B324480E9B04D61 /* Pods-StackSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StackSearchTests/Pods-StackSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,8 +135,8 @@
 		E51FC31D1AB4ED03009DB98F /* Categories & Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				E51FC31A1AB4ECFA009DB98F /* NSString+HTML.h */,
-				E51FC31B1AB4ECFA009DB98F /* NSString+HTML.m */,
+				E5F062DB1AB5B76A002E5AF5 /* NSString+HTML.h */,
+				E5F062DC1AB5B76A002E5AF5 /* NSString+HTML.m */,
 				E5C6E8101AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.h */,
 				E5C6E8111AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m */,
 			);
@@ -450,10 +450,10 @@
 				E594205B1AAF78590005FD22 /* SEResponse.m in Sources */,
 				E59420211AAF61AD0005FD22 /* main.m in Sources */,
 				E51D4BFC1AB0CAC10047BD04 /* SESessionManager.m in Sources */,
+				E5F062DD1AB5B76A002E5AF5 /* NSString+HTML.m in Sources */,
 				E594206B1AAF8F5F0005FD22 /* SearchEngine.m in Sources */,
 				E594205F1AAF79070005FD22 /* SEUser.m in Sources */,
 				E594D29B1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m in Sources */,
-				E51FC31C1AB4ECFA009DB98F /* NSString+HTML.m in Sources */,
 				E594D2981AB45AB40011DCA3 /* SubtitleStyleCell.m in Sources */,
 				E594D29E1AB46A180011DCA3 /* QuestionDetailController.m in Sources */,
 				E59420661AAF7D3E0005FD22 /* SEQuestion.m in Sources */,

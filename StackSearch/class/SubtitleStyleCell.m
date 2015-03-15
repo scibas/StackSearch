@@ -18,8 +18,8 @@
     return self;
 }
 
--(void)prepareForReuse{
-    
-}
+//-(void)prepareForReuse{
+//    
+//}
 
 @end

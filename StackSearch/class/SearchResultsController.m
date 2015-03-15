@@ -14,12 +14,13 @@
 #import "SESessionManager.h"
 #import "SEQuestion.h"
 #import "UIRefreshControl+AFNetworking.h"
+#import "UIAlertView+AFNetworking.h"
 #import "SubtitleStyleCell+SEQuestion.h"
 #import "QuestionDetailController.h"
 
 static NSString *const kTableViewCellReuseIdentifier = @"TableViewCellReuseIdentifier";
 
-@interface SearchResultsController() <UISearchBarDelegate, UISearchControllerDelegate>
+@interface SearchResultsController() <UISearchBarDelegate>
 @property(nonatomic, strong) SEResponse *response;
 @property(nonatomic, strong) UIButton *searchMoreButton;
 @property(nonatomic, strong) UISearchController *searchController;
@@ -52,10 +53,8 @@ static NSString *const kTableViewCellReuseIdentifier = @"TableViewCellReuseIdent
     //search controller
     UISearchController *searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
     [searchController.searchBar sizeToFit];
-    searchController.searchBar.showsCancelButton = YES;
     searchController.dimsBackgroundDuringPresentation = NO;
     searchController.searchBar.delegate = self;
-    searchController.delegate = self;
     searchController.hidesNavigationBarDuringPresentation = NO;
     self.tableView.tableHeaderView = searchController.searchBar;
     self.searchController = searchController;
@@ -70,7 +69,7 @@ static NSString *const kTableViewCellReuseIdentifier = @"TableViewCellReuseIdent
     parametersBuilder.searchPhrase = searchBar.text;
     NSDictionary *currentSearchParameters = [parametersBuilder build];
     
-    NSURLSessionTask *searchTask = [self responseForParameters:currentSearchParameters completionBlock:^(SEResponse *response, NSError *error) {
+    NSURLSessionTask *searchTask = [self sendHTTPRequestWithParameters:currentSearchParameters completionBlock:^(SEResponse *response, NSError *error) {
         [self manageResponse:response];
     }];
     
@@ -81,7 +80,7 @@ static NSString *const kTableViewCellReuseIdentifier = @"TableViewCellReuseIdent
 
 -(void)tableViewDidPullDownToRefresh:(id)sender{
 
-    NSURLSessionTask *searchTask = [self responseForParameters:self.lastSearchParameters completionBlock:^(SEResponse *response, NSError *error) {
+    NSURLSessionTask *searchTask = [self sendHTTPRequestWithParameters:self.lastSearchParameters completionBlock:^(SEResponse *response, NSError *error) {
         [self manageResponse:response];
     }];
     
@@ -93,7 +92,7 @@ static NSString *const kTableViewCellReuseIdentifier = @"TableViewCellReuseIdent
     SearchEngineParametersBuilder *parametersBuilder = [[SearchEngineParametersBuilder alloc] init];
     NSDictionary *parameters = [parametersBuilder nextPageFromParameters:self.lastSearchParameters];
     
-    [self responseForParameters:parameters completionBlock:^(SEResponse *response, NSError *error) {
+    [self sendHTTPRequestWithParameters:parameters completionBlock:^(SEResponse *response, NSError *error) {
         [response mergeWithItems:self.response.items];
         [self manageResponse:response];
     }];
@@ -111,7 +110,7 @@ static NSString *const kTableViewCellReuseIdentifier = @"TableViewCellReuseIdent
 }
 
 
--(NSURLSessionTask *)responseForParameters:(NSDictionary *)parameters completionBlock:(void (^)(SEResponse *response, NSError *error))completionBlock{
+-(NSURLSessionTask *)sendHTTPRequestWithParameters:(NSDictionary *)parameters completionBlock:(void (^)(SEResponse *response, NSError *error))completionBlock{
     SESessionManager *sessionManager = [SESessionManager sharedInstance];
     SearchEngine *searchEngine = [[SearchEngine alloc] initWithSessionManager:sessionManager];
     
@@ -121,6 +120,8 @@ static NSString *const kTableViewCellReuseIdentifier = @"TableViewCellReuseIdent
         }
     }];
 
+    [UIAlertView showAlertViewForTaskWithErrorOnCompletion:task delegate:nil];
+    
     return task;
 }
 

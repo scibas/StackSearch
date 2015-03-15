@@ -8,18 +8,15 @@
 
 #import "SEUser.h"
 #import "SEApiKeys.h"
+#import "NSString+HTML.h"
 
 @implementation SEUser
 
 -(instancetype)initWithDictionary:(NSDictionary *)userDictionary{
     self = [super init];
     if(self) {
-        
-        _displayName = userDictionary[SEUserNameKey];
-        
-        NSString *imageURLString = userDictionary[SEUserProfileImageUrl];
-        _userProfileImage = [NSURL URLWithString:imageURLString];
-        
+        _displayName        = [userDictionary[SEUserNameKey] kv_decodeHTMLCharacterEntities];
+        _userProfileImage   = [NSURL URLWithString:userDictionary[SEUserProfileImageUrl]];
     }
     return self;
 }
