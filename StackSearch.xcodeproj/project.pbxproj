@@ -7,11 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D74EB49F6349DC458D259E5 /* libPods-StackSearchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 938A968129BD985232ACC473 /* libPods-StackSearchTests.a */; };
+		4DE8984780C0E4375AD1B80F /* libPods-StackSearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C27DDB933928BC9E0BDCADF2 /* libPods-StackSearch.a */; };
+		E51D4BFC1AB0CAC10047BD04 /* SESessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E51D4BFB1AB0CAC10047BD04 /* SESessionManager.m */; };
 		E59420211AAF61AD0005FD22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E59420201AAF61AD0005FD22 /* main.m */; };
 		E594202C1AAF61AD0005FD22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E594202B1AAF61AD0005FD22 /* Images.xcassets */; };
 		E594202F1AAF61AD0005FD22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E594202D1AAF61AD0005FD22 /* LaunchScreen.xib */; };
-		E594203B1AAF61AD0005FD22 /* StackSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E594203A1AAF61AD0005FD22 /* StackSearchTests.m */; };
 		E59420461AAF62730005FD22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E59420451AAF62730005FD22 /* AppDelegate.m */; };
+		E59420581AAF78180005FD22 /* SEApiKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = E59420571AAF78180005FD22 /* SEApiKeys.m */; };
+		E594205B1AAF78590005FD22 /* SEResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E594205A1AAF78590005FD22 /* SEResponse.m */; };
+		E594205F1AAF79070005FD22 /* SEUser.m in Sources */ = {isa = PBXBuildFile; fileRef = E594205E1AAF79070005FD22 /* SEUser.m */; };
+		E59420611AAF79690005FD22 /* SEUserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E59420601AAF79690005FD22 /* SEUserTest.m */; };
+		E59420631AAF7CEF0005FD22 /* SEQuestionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E59420621AAF7CEF0005FD22 /* SEQuestionTest.m */; };
+		E59420661AAF7D3E0005FD22 /* SEQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = E59420651AAF7D3E0005FD22 /* SEQuestion.m */; };
+		E59420681AAF81170005FD22 /* SEResponseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E59420671AAF81170005FD22 /* SEResponseTest.m */; };
+		E594206B1AAF8F5F0005FD22 /* SearchEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E594206A1AAF8F5F0005FD22 /* SearchEngine.m */; };
+		E594206D1AAF91940005FD22 /* SearchEngineTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E594206C1AAF91940005FD22 /* SearchEngineTest.m */; };
+		E594206F1AAF931D0005FD22 /* SEFakeResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = E594206E1AAF931D0005FD22 /* SEFakeResponse.json */; };
+		E594D2981AB45AB40011DCA3 /* SubtitleStyleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E594D2971AB45AB40011DCA3 /* SubtitleStyleCell.m */; };
+		E594D29B1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = E594D29A1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m */; };
+		E594D29E1AB46A180011DCA3 /* QuestionDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = E594D29D1AB46A180011DCA3 /* QuestionDetailController.m */; };
+		E5C6E8121AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C6E8111AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m */; };
+		E5D7A62D1AB219DE00984046 /* SearchEngineParametersBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A62C1AB219DE00984046 /* SearchEngineParametersBuilder.m */; };
+		E5D7A6311AB225F200984046 /* SearchResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A6301AB225F200984046 /* SearchResultsController.m */; };
+		E5F062DD1AB5B76A002E5AF5 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F062DC1AB5B76A002E5AF5 /* NSString+HTML.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4799491D4A0B126313D0F069 /* Pods-StackSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-StackSearch/Pods-StackSearch.release.xcconfig"; sourceTree = "<group>"; };
+		834CE2BC6797587F109B76B3 /* Pods-StackSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StackSearchTests/Pods-StackSearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		938A968129BD985232ACC473 /* libPods-StackSearchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StackSearchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFED9A6AC266FC7826647CA /* Pods-StackSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StackSearch/Pods-StackSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		C27DDB933928BC9E0BDCADF2 /* libPods-StackSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StackSearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E51D4BFA1AB0CAC10047BD04 /* SESessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SESessionManager.h; path = class/SESessionManager.h; sourceTree = "<group>"; };
+		E51D4BFB1AB0CAC10047BD04 /* SESessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SESessionManager.m; path = class/SESessionManager.m; sourceTree = "<group>"; };
 		E594201B1AAF61AD0005FD22 /* StackSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E594201F1AAF61AD0005FD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E59420201AAF61AD0005FD22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -32,9 +58,38 @@
 		E594202E1AAF61AD0005FD22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E59420341AAF61AD0005FD22 /* StackSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59420391AAF61AD0005FD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E594203A1AAF61AD0005FD22 /* StackSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackSearchTests.m; sourceTree = "<group>"; };
 		E59420441AAF62730005FD22 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = class/AppDelegate.h; sourceTree = "<group>"; };
-		E59420451AAF62730005FD22 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = class/AppDelegate.m; sourceTree = "<group>"; };
+		E59420451AAF62730005FD22 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = class/AppDelegate.m; sourceTree = "<group>"; wrapsLines = 0; };
+		E59420561AAF78180005FD22 /* SEApiKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEApiKeys.h; path = class/SEApiKeys.h; sourceTree = "<group>"; };
+		E59420571AAF78180005FD22 /* SEApiKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEApiKeys.m; path = class/SEApiKeys.m; sourceTree = "<group>"; };
+		E59420591AAF78590005FD22 /* SEResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEResponse.h; path = class/SEResponse.h; sourceTree = "<group>"; };
+		E594205A1AAF78590005FD22 /* SEResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEResponse.m; path = class/SEResponse.m; sourceTree = "<group>"; };
+		E594205D1AAF79070005FD22 /* SEUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEUser.h; path = class/SEUser.h; sourceTree = "<group>"; };
+		E594205E1AAF79070005FD22 /* SEUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEUser.m; path = class/SEUser.m; sourceTree = "<group>"; };
+		E59420601AAF79690005FD22 /* SEUserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEUserTest.m; sourceTree = "<group>"; };
+		E59420621AAF7CEF0005FD22 /* SEQuestionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEQuestionTest.m; sourceTree = "<group>"; wrapsLines = 0; };
+		E59420641AAF7D3E0005FD22 /* SEQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEQuestion.h; path = class/SEQuestion.h; sourceTree = "<group>"; };
+		E59420651AAF7D3E0005FD22 /* SEQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEQuestion.m; path = class/SEQuestion.m; sourceTree = "<group>"; };
+		E59420671AAF81170005FD22 /* SEResponseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEResponseTest.m; sourceTree = "<group>"; wrapsLines = 0; };
+		E59420691AAF8F5F0005FD22 /* SearchEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchEngine.h; path = class/SearchEngine.h; sourceTree = "<group>"; };
+		E594206A1AAF8F5F0005FD22 /* SearchEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchEngine.m; path = class/SearchEngine.m; sourceTree = "<group>"; };
+		E594206C1AAF91940005FD22 /* SearchEngineTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchEngineTest.m; sourceTree = "<group>"; wrapsLines = 0; };
+		E594206E1AAF931D0005FD22 /* SEFakeResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SEFakeResponse.json; sourceTree = "<group>"; };
+		E594D2961AB45AB40011DCA3 /* SubtitleStyleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubtitleStyleCell.h; path = class/SubtitleStyleCell.h; sourceTree = "<group>"; };
+		E594D2971AB45AB40011DCA3 /* SubtitleStyleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubtitleStyleCell.m; path = class/SubtitleStyleCell.m; sourceTree = "<group>"; };
+		E594D2991AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SubtitleStyleCell+SEQuestion.h"; path = "class/SubtitleStyleCell+SEQuestion.h"; sourceTree = "<group>"; };
+		E594D29A1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SubtitleStyleCell+SEQuestion.m"; path = "class/SubtitleStyleCell+SEQuestion.m"; sourceTree = "<group>"; };
+		E594D29C1AB46A180011DCA3 /* QuestionDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionDetailController.h; path = class/QuestionDetailController.h; sourceTree = "<group>"; };
+		E594D29D1AB46A180011DCA3 /* QuestionDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionDetailController.m; path = class/QuestionDetailController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		E5C6E8101AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+DTOHelpers.h"; path = "class/NSLayoutConstraint+DTOHelpers.h"; sourceTree = "<group>"; };
+		E5C6E8111AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+DTOHelpers.m"; path = "class/NSLayoutConstraint+DTOHelpers.m"; sourceTree = "<group>"; };
+		E5D7A62B1AB219DE00984046 /* SearchEngineParametersBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchEngineParametersBuilder.h; path = class/SearchEngineParametersBuilder.h; sourceTree = "<group>"; };
+		E5D7A62C1AB219DE00984046 /* SearchEngineParametersBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchEngineParametersBuilder.m; path = class/SearchEngineParametersBuilder.m; sourceTree = "<group>"; };
+		E5D7A62F1AB225F200984046 /* SearchResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchResultsController.h; path = class/SearchResultsController.h; sourceTree = "<group>"; };
+		E5D7A6301AB225F200984046 /* SearchResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchResultsController.m; path = class/SearchResultsController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		E5F062DB1AB5B76A002E5AF5 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+HTML.h"; path = "class/NSString+HTML.h"; sourceTree = "<group>"; };
+		E5F062DC1AB5B76A002E5AF5 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+HTML.m"; path = "class/NSString+HTML.m"; sourceTree = "<group>"; };
+		F76B14F84B324480E9B04D61 /* Pods-StackSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StackSearchTests/Pods-StackSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DE8984780C0E4375AD1B80F /* libPods-StackSearch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,18 +105,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D74EB49F6349DC458D259E5 /* libPods-StackSearchTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36D81DD53754681978C6338E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCFED9A6AC266FC7826647CA /* Pods-StackSearch.debug.xcconfig */,
+				4799491D4A0B126313D0F069 /* Pods-StackSearch.release.xcconfig */,
+				F76B14F84B324480E9B04D61 /* Pods-StackSearchTests.debug.xcconfig */,
+				834CE2BC6797587F109B76B3 /* Pods-StackSearchTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C8081039A87944FC0C6C92C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C27DDB933928BC9E0BDCADF2 /* libPods-StackSearch.a */,
+				938A968129BD985232ACC473 /* libPods-StackSearchTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E51FC31D1AB4ED03009DB98F /* Categories & Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E5F062DB1AB5B76A002E5AF5 /* NSString+HTML.h */,
+				E5F062DC1AB5B76A002E5AF5 /* NSString+HTML.m */,
+				E5C6E8101AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.h */,
+				E5C6E8111AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m */,
+			);
+			name = "Categories & Helpers";
+			sourceTree = "<group>";
+		};
 		E59420121AAF61AD0005FD22 = {
 			isa = PBXGroup;
 			children = (
 				E594201D1AAF61AD0005FD22 /* StackSearch */,
 				E59420371AAF61AD0005FD22 /* StackSearchTests */,
 				E594201C1AAF61AD0005FD22 /* Products */,
+				36D81DD53754681978C6338E /* Pods */,
+				6C8081039A87944FC0C6C92C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +166,10 @@
 		E594201D1AAF61AD0005FD22 /* StackSearch */ = {
 			isa = PBXGroup;
 			children = (
+				E51FC31D1AB4ED03009DB98F /* Categories & Helpers */,
+				E594D29F1AB484280011DCA3 /* Screens */,
+				E594205C1AAF78630005FD22 /* Model */,
+				E5D7A62E1AB2255D00984046 /* SearchEngine */,
 				E59420441AAF62730005FD22 /* AppDelegate.h */,
 				E59420451AAF62730005FD22 /* AppDelegate.m */,
 				E594202B1AAF61AD0005FD22 /* Images.xcassets */,
@@ -97,7 +191,11 @@
 		E59420371AAF61AD0005FD22 /* StackSearchTests */ = {
 			isa = PBXGroup;
 			children = (
-				E594203A1AAF61AD0005FD22 /* StackSearchTests.m */,
+				E594206E1AAF931D0005FD22 /* SEFakeResponse.json */,
+				E594206C1AAF91940005FD22 /* SearchEngineTest.m */,
+				E59420601AAF79690005FD22 /* SEUserTest.m */,
+				E59420621AAF7CEF0005FD22 /* SEQuestionTest.m */,
+				E59420671AAF81170005FD22 /* SEResponseTest.m */,
 				E59420381AAF61AD0005FD22 /* Supporting Files */,
 			);
 			path = StackSearchTests;
@@ -111,6 +209,73 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E594205C1AAF78630005FD22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E59420561AAF78180005FD22 /* SEApiKeys.h */,
+				E59420571AAF78180005FD22 /* SEApiKeys.m */,
+				E59420591AAF78590005FD22 /* SEResponse.h */,
+				E594205A1AAF78590005FD22 /* SEResponse.m */,
+				E594205D1AAF79070005FD22 /* SEUser.h */,
+				E594205E1AAF79070005FD22 /* SEUser.m */,
+				E59420641AAF7D3E0005FD22 /* SEQuestion.h */,
+				E59420651AAF7D3E0005FD22 /* SEQuestion.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E594D29F1AB484280011DCA3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E594D2A01AB484320011DCA3 /* SearchResult */,
+				E594D2A11AB4844E0011DCA3 /* QuestionDetail */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		E594D2A01AB484320011DCA3 /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				E5D7A62F1AB225F200984046 /* SearchResultsController.h */,
+				E5D7A6301AB225F200984046 /* SearchResultsController.m */,
+				E594D2A21AB484600011DCA3 /* CustomViews */,
+			);
+			name = SearchResult;
+			sourceTree = "<group>";
+		};
+		E594D2A11AB4844E0011DCA3 /* QuestionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E594D29C1AB46A180011DCA3 /* QuestionDetailController.h */,
+				E594D29D1AB46A180011DCA3 /* QuestionDetailController.m */,
+			);
+			name = QuestionDetail;
+			sourceTree = "<group>";
+		};
+		E594D2A21AB484600011DCA3 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E594D2961AB45AB40011DCA3 /* SubtitleStyleCell.h */,
+				E594D2971AB45AB40011DCA3 /* SubtitleStyleCell.m */,
+				E594D2991AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.h */,
+				E594D29A1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		E5D7A62E1AB2255D00984046 /* SearchEngine */ = {
+			isa = PBXGroup;
+			children = (
+				E51D4BFA1AB0CAC10047BD04 /* SESessionManager.h */,
+				E51D4BFB1AB0CAC10047BD04 /* SESessionManager.m */,
+				E5D7A62B1AB219DE00984046 /* SearchEngineParametersBuilder.h */,
+				E5D7A62C1AB219DE00984046 /* SearchEngineParametersBuilder.m */,
+				E59420691AAF8F5F0005FD22 /* SearchEngine.h */,
+				E594206A1AAF8F5F0005FD22 /* SearchEngine.m */,
+			);
+			name = SearchEngine;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E594203E1AAF61AD0005FD22 /* Build configuration list for PBXNativeTarget "StackSearch" */;
 			buildPhases = (
+				6A1E8C486F4553E98A29493E /* Check Pods Manifest.lock */,
 				E59420171AAF61AD0005FD22 /* Sources */,
 				E59420181AAF61AD0005FD22 /* Frameworks */,
 				E59420191AAF61AD0005FD22 /* Resources */,
+				F0FFCFBB6BCC5A9C790324A5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,9 +302,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E59420411AAF61AD0005FD22 /* Build configuration list for PBXNativeTarget "StackSearchTests" */;
 			buildPhases = (
+				EBE81F13C8A00F77B6B492A2 /* Check Pods Manifest.lock */,
 				E59420301AAF61AD0005FD22 /* Sources */,
 				E59420311AAF61AD0005FD22 /* Frameworks */,
 				E59420321AAF61AD0005FD22 /* Resources */,
+				1016E25A1A465F772523D1AF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,18 +369,95 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E594206F1AAF931D0005FD22 /* SEFakeResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1016E25A1A465F772523D1AF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StackSearchTests/Pods-StackSearchTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A1E8C486F4553E98A29493E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EBE81F13C8A00F77B6B492A2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F0FFCFBB6BCC5A9C790324A5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StackSearch/Pods-StackSearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E59420171AAF61AD0005FD22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D7A6311AB225F200984046 /* SearchResultsController.m in Sources */,
 				E59420461AAF62730005FD22 /* AppDelegate.m in Sources */,
+				E5D7A62D1AB219DE00984046 /* SearchEngineParametersBuilder.m in Sources */,
+				E59420581AAF78180005FD22 /* SEApiKeys.m in Sources */,
+				E594205B1AAF78590005FD22 /* SEResponse.m in Sources */,
 				E59420211AAF61AD0005FD22 /* main.m in Sources */,
+				E51D4BFC1AB0CAC10047BD04 /* SESessionManager.m in Sources */,
+				E5F062DD1AB5B76A002E5AF5 /* NSString+HTML.m in Sources */,
+				E594206B1AAF8F5F0005FD22 /* SearchEngine.m in Sources */,
+				E594205F1AAF79070005FD22 /* SEUser.m in Sources */,
+				E594D29B1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m in Sources */,
+				E594D2981AB45AB40011DCA3 /* SubtitleStyleCell.m in Sources */,
+				E594D29E1AB46A180011DCA3 /* QuestionDetailController.m in Sources */,
+				E59420661AAF7D3E0005FD22 /* SEQuestion.m in Sources */,
+				E5C6E8121AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +465,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E594203B1AAF61AD0005FD22 /* StackSearchTests.m in Sources */,
+				E59420611AAF79690005FD22 /* SEUserTest.m in Sources */,
+				E594206D1AAF91940005FD22 /* SearchEngineTest.m in Sources */,
+				E59420631AAF7CEF0005FD22 /* SEQuestionTest.m in Sources */,
+				E59420681AAF81170005FD22 /* SEResponseTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,9 +574,11 @@
 		};
 		E594203F1AAF61AD0005FD22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCFED9A6AC266FC7826647CA /* Pods-StackSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StackSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -335,9 +586,11 @@
 		};
 		E59420401AAF61AD0005FD22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4799491D4A0B126313D0F069 /* Pods-StackSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StackSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -345,6 +598,7 @@
 		};
 		E59420421AAF61AD0005FD22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F76B14F84B324480E9B04D61 /* Pods-StackSearchTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -364,6 +618,7 @@
 		};
 		E59420431AAF61AD0005FD22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 834CE2BC6797587F109B76B3 /* Pods-StackSearchTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -396,6 +651,7 @@
 				E59420401AAF61AD0005FD22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E59420411AAF61AD0005FD22 /* Build configuration list for PBXNativeTarget "StackSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +660,7 @@
 				E59420431AAF61AD0005FD22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
