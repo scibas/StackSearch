@@ -10,6 +10,7 @@
 		4D74EB49F6349DC458D259E5 /* libPods-StackSearchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 938A968129BD985232ACC473 /* libPods-StackSearchTests.a */; };
 		4DE8984780C0E4375AD1B80F /* libPods-StackSearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C27DDB933928BC9E0BDCADF2 /* libPods-StackSearch.a */; };
 		E51D4BFC1AB0CAC10047BD04 /* SESessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E51D4BFB1AB0CAC10047BD04 /* SESessionManager.m */; };
+		E51FC31C1AB4ECFA009DB98F /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = E51FC31B1AB4ECFA009DB98F /* NSString+HTML.m */; };
 		E59420211AAF61AD0005FD22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E59420201AAF61AD0005FD22 /* main.m */; };
 		E594202C1AAF61AD0005FD22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E594202B1AAF61AD0005FD22 /* Images.xcassets */; };
 		E594202F1AAF61AD0005FD22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E594202D1AAF61AD0005FD22 /* LaunchScreen.xib */; };
@@ -27,6 +28,7 @@
 		E594D2981AB45AB40011DCA3 /* SubtitleStyleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E594D2971AB45AB40011DCA3 /* SubtitleStyleCell.m */; };
 		E594D29B1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = E594D29A1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m */; };
 		E594D29E1AB46A180011DCA3 /* QuestionDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = E594D29D1AB46A180011DCA3 /* QuestionDetailController.m */; };
+		E5C6E8121AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C6E8111AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m */; };
 		E5D7A62D1AB219DE00984046 /* SearchEngineParametersBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A62C1AB219DE00984046 /* SearchEngineParametersBuilder.m */; };
 		E5D7A6311AB225F200984046 /* SearchResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A6301AB225F200984046 /* SearchResultsController.m */; };
 /* End PBXBuildFile section */
@@ -49,6 +51,8 @@
 		C27DDB933928BC9E0BDCADF2 /* libPods-StackSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StackSearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51D4BFA1AB0CAC10047BD04 /* SESessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SESessionManager.h; path = class/SESessionManager.h; sourceTree = "<group>"; };
 		E51D4BFB1AB0CAC10047BD04 /* SESessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SESessionManager.m; path = class/SESessionManager.m; sourceTree = "<group>"; };
+		E51FC31A1AB4ECFA009DB98F /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		E51FC31B1AB4ECFA009DB98F /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
 		E594201B1AAF61AD0005FD22 /* StackSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E594201F1AAF61AD0005FD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E59420201AAF61AD0005FD22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,7 +61,7 @@
 		E59420341AAF61AD0005FD22 /* StackSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59420391AAF61AD0005FD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E59420441AAF62730005FD22 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = class/AppDelegate.h; sourceTree = "<group>"; };
-		E59420451AAF62730005FD22 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = class/AppDelegate.m; sourceTree = "<group>"; };
+		E59420451AAF62730005FD22 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = class/AppDelegate.m; sourceTree = "<group>"; wrapsLines = 0; };
 		E59420561AAF78180005FD22 /* SEApiKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEApiKeys.h; path = class/SEApiKeys.h; sourceTree = "<group>"; };
 		E59420571AAF78180005FD22 /* SEApiKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SEApiKeys.m; path = class/SEApiKeys.m; sourceTree = "<group>"; };
 		E59420591AAF78590005FD22 /* SEResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SEResponse.h; path = class/SEResponse.h; sourceTree = "<group>"; };
@@ -78,11 +82,13 @@
 		E594D2991AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SubtitleStyleCell+SEQuestion.h"; path = "class/SubtitleStyleCell+SEQuestion.h"; sourceTree = "<group>"; };
 		E594D29A1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SubtitleStyleCell+SEQuestion.m"; path = "class/SubtitleStyleCell+SEQuestion.m"; sourceTree = "<group>"; };
 		E594D29C1AB46A180011DCA3 /* QuestionDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionDetailController.h; path = class/QuestionDetailController.h; sourceTree = "<group>"; };
-		E594D29D1AB46A180011DCA3 /* QuestionDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionDetailController.m; path = class/QuestionDetailController.m; sourceTree = "<group>"; };
+		E594D29D1AB46A180011DCA3 /* QuestionDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionDetailController.m; path = class/QuestionDetailController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		E5C6E8101AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+DTOHelpers.h"; path = "class/NSLayoutConstraint+DTOHelpers.h"; sourceTree = "<group>"; };
+		E5C6E8111AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+DTOHelpers.m"; path = "class/NSLayoutConstraint+DTOHelpers.m"; sourceTree = "<group>"; };
 		E5D7A62B1AB219DE00984046 /* SearchEngineParametersBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchEngineParametersBuilder.h; path = class/SearchEngineParametersBuilder.h; sourceTree = "<group>"; };
 		E5D7A62C1AB219DE00984046 /* SearchEngineParametersBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchEngineParametersBuilder.m; path = class/SearchEngineParametersBuilder.m; sourceTree = "<group>"; };
 		E5D7A62F1AB225F200984046 /* SearchResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchResultsController.h; path = class/SearchResultsController.h; sourceTree = "<group>"; };
-		E5D7A6301AB225F200984046 /* SearchResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchResultsController.m; path = class/SearchResultsController.m; sourceTree = "<group>"; };
+		E5D7A6301AB225F200984046 /* SearchResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchResultsController.m; path = class/SearchResultsController.m; sourceTree = "<group>"; wrapsLines = 0; };
 		F76B14F84B324480E9B04D61 /* Pods-StackSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StackSearchTests/Pods-StackSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +132,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E51FC31D1AB4ED03009DB98F /* Categories & Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E51FC31A1AB4ECFA009DB98F /* NSString+HTML.h */,
+				E51FC31B1AB4ECFA009DB98F /* NSString+HTML.m */,
+				E5C6E8101AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.h */,
+				E5C6E8111AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m */,
+			);
+			name = "Categories & Helpers";
+			sourceTree = "<group>";
+		};
 		E59420121AAF61AD0005FD22 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +166,7 @@
 		E594201D1AAF61AD0005FD22 /* StackSearch */ = {
 			isa = PBXGroup;
 			children = (
+				E51FC31D1AB4ED03009DB98F /* Categories & Helpers */,
 				E594D29F1AB484280011DCA3 /* Screens */,
 				E594205C1AAF78630005FD22 /* Model */,
 				E5D7A62E1AB2255D00984046 /* SearchEngine */,
@@ -435,9 +453,11 @@
 				E594206B1AAF8F5F0005FD22 /* SearchEngine.m in Sources */,
 				E594205F1AAF79070005FD22 /* SEUser.m in Sources */,
 				E594D29B1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m in Sources */,
+				E51FC31C1AB4ECFA009DB98F /* NSString+HTML.m in Sources */,
 				E594D2981AB45AB40011DCA3 /* SubtitleStyleCell.m in Sources */,
 				E594D29E1AB46A180011DCA3 /* QuestionDetailController.m in Sources */,
 				E59420661AAF7D3E0005FD22 /* SEQuestion.m in Sources */,
+				E5C6E8121AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +578,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StackSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -569,6 +590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StackSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

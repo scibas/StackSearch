@@ -7,39 +7,60 @@
 //
 
 #import "QuestionDetailController.h"
-#import "SEQuestion.h"
+#import "NSLayoutConstraint+DTOHelpers.h"
+@import WebKit;
 
-@interface QuestionDetailController()
-@property(nonatomic, weak, readonly) UIWebView *webView;
-@property(nonatomic, strong) SEQuestion *question;
+@interface QuestionDetailController() <WKNavigationDelegate>
+@property(nonatomic, strong) UIActivityIndicatorView *loadingActivityIndicator;
+
 @end
 
 @implementation QuestionDetailController
 
--(instancetype)initWithQuestion:(SEQuestion *)question{
-    NSParameterAssert(question);
-    self = [super init];
-    if(self) {
-        _question = question;
-    }
-    return self;
-}
-
 -(void)loadView{
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectZero];
+    //Web View
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:CGRectZero];
     webView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    webView.navigationDelegate = self;
     
+    //Activity Indicator
+    UIActivityIndicatorView *loadingActivityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    loadingActivityIndicator.translatesAutoresizingMaskIntoConstraints = NO;
+    loadingActivityIndicator.color = [UIColor grayColor];
+    [webView addSubview:loadingActivityIndicator];
+    self.loadingActivityIndicator = loadingActivityIndicator;
+    
+    //Activity Indicator constraints
+    [webView addConstraint:[NSLayoutConstraint dto_verticalyCenterView:loadingActivityIndicator inSuperView:webView]];
+    [webView addConstraint:[NSLayoutConstraint dto_horizontalyCenterView:loadingActivityIndicator inSuperView:webView]];
+
     self.view = webView;
 }
 
 -(void)viewDidLoad{
-    NSURL *url = [[NSURL alloc] initWithString:self.question.link];
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
-    [self.webView loadRequest:request];
+    [super viewDidLoad];
+    
+    self.title = NSLocalizedString(@"Question", @"Question");
+    
+    self.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
+    self.navigationItem.leftItemsSupplementBackButton = YES;
 }
 
--(UIWebView *)webView{
-    return (UIWebView*) self.view;
+-(void)loadUrl:(NSURL *)url{
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    [(UIWebView *)self.view loadRequest:request];
+}
+
+-(void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation{
+    [self.loadingActivityIndicator startAnimating];
+}
+
+-(void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
+    [self.loadingActivityIndicator stopAnimating];
+}
+
+-(void)dealloc{
+    [((UIWebView *)self.view) stopLoading];
 }
 
 @end
