@@ -139,17 +139,19 @@ static NSString *const kTableViewCellReuseIdentifier = @"TableViewCellReuseIdent
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+
     SEQuestion *selectedQuestion = self.response.items[indexPath.row];
-    QuestionDetailController *questionDitailController = [[QuestionDetailController alloc] init];
-    [questionDitailController loadUrl:[NSURL URLWithString:selectedQuestion.link]];
-
-    UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:questionDitailController];
+    QuestionDetailController *questionViewController;
     
-    questionDitailController.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
-    self.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
-
-    [self showDetailViewController:navc sender:self];
+    if(self.splitViewController){
+        UINavigationController *detailNavigationController = [self.splitViewController.viewControllers lastObject];
+        questionViewController = (QuestionDetailController *)detailNavigationController.topViewController;
+    } else {
+        questionViewController = [[QuestionDetailController alloc] init];
+        [self.navigationController pushViewController:questionViewController animated:YES];
+    }
+    
+    [questionViewController loadUrl:[NSURL URLWithString:selectedQuestion.link]];
 }
 
 @end

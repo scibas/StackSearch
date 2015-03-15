@@ -20,15 +20,25 @@
     
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
 
-    UISplitViewController *splitViewController = [[UISplitViewController alloc] init];
-    UIViewController *masterViewController = [[SearchResultsController alloc]initWithStyle:UITableViewStyleGrouped];
-    UIViewController *detailViewController = [[QuestionDetailController alloc] init];
-    splitViewController.viewControllers = @[[[UINavigationController alloc] initWithRootViewController:masterViewController],
-                                            [[UINavigationController alloc] initWithRootViewController:detailViewController]];
+    UIViewController *rootViewController;
+    BOOL isOniPad = [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad;
+    
+    if(isOniPad){
+        UISplitViewController *splitViewController = [[UISplitViewController alloc] init];
+        UIViewController *masterViewController = [[SearchResultsController alloc]initWithStyle:UITableViewStyleGrouped];
+        UIViewController *detailViewController = [[QuestionDetailController alloc] init];
+        splitViewController.viewControllers = @[[[UINavigationController alloc] initWithRootViewController:masterViewController],
+                                                [[UINavigationController alloc] initWithRootViewController:detailViewController]];
+        
+        rootViewController = splitViewController;
+        
+    } else {
+        SearchResultsController *searchResultController = [[SearchResultsController alloc]initWithStyle:UITableViewStyleGrouped];
+        rootViewController = [[UINavigationController alloc] initWithRootViewController:searchResultController];
+    }
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = splitViewController;
-    
+    self.window.rootViewController = rootViewController;
     [self.window makeKeyAndVisible];
     
     return YES;
