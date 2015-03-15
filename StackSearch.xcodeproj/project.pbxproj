@@ -28,6 +28,7 @@
 		E594D2981AB45AB40011DCA3 /* SubtitleStyleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E594D2971AB45AB40011DCA3 /* SubtitleStyleCell.m */; };
 		E594D29B1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = E594D29A1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m */; };
 		E594D29E1AB46A180011DCA3 /* QuestionDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = E594D29D1AB46A180011DCA3 /* QuestionDetailController.m */; };
+		E5C6E8121AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C6E8111AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m */; };
 		E5D7A62D1AB219DE00984046 /* SearchEngineParametersBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A62C1AB219DE00984046 /* SearchEngineParametersBuilder.m */; };
 		E5D7A6311AB225F200984046 /* SearchResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D7A6301AB225F200984046 /* SearchResultsController.m */; };
 /* End PBXBuildFile section */
@@ -81,7 +82,9 @@
 		E594D2991AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SubtitleStyleCell+SEQuestion.h"; path = "class/SubtitleStyleCell+SEQuestion.h"; sourceTree = "<group>"; };
 		E594D29A1AB45CEE0011DCA3 /* SubtitleStyleCell+SEQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SubtitleStyleCell+SEQuestion.m"; path = "class/SubtitleStyleCell+SEQuestion.m"; sourceTree = "<group>"; };
 		E594D29C1AB46A180011DCA3 /* QuestionDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionDetailController.h; path = class/QuestionDetailController.h; sourceTree = "<group>"; };
-		E594D29D1AB46A180011DCA3 /* QuestionDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionDetailController.m; path = class/QuestionDetailController.m; sourceTree = "<group>"; };
+		E594D29D1AB46A180011DCA3 /* QuestionDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionDetailController.m; path = class/QuestionDetailController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		E5C6E8101AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+DTOHelpers.h"; path = "class/NSLayoutConstraint+DTOHelpers.h"; sourceTree = "<group>"; };
+		E5C6E8111AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+DTOHelpers.m"; path = "class/NSLayoutConstraint+DTOHelpers.m"; sourceTree = "<group>"; };
 		E5D7A62B1AB219DE00984046 /* SearchEngineParametersBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchEngineParametersBuilder.h; path = class/SearchEngineParametersBuilder.h; sourceTree = "<group>"; };
 		E5D7A62C1AB219DE00984046 /* SearchEngineParametersBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchEngineParametersBuilder.m; path = class/SearchEngineParametersBuilder.m; sourceTree = "<group>"; };
 		E5D7A62F1AB225F200984046 /* SearchResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchResultsController.h; path = class/SearchResultsController.h; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 			children = (
 				E51FC31A1AB4ECFA009DB98F /* NSString+HTML.h */,
 				E51FC31B1AB4ECFA009DB98F /* NSString+HTML.m */,
+				E5C6E8101AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.h */,
+				E5C6E8111AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m */,
 			);
 			name = "Categories & Helpers";
 			sourceTree = "<group>";
@@ -452,6 +457,7 @@
 				E594D2981AB45AB40011DCA3 /* SubtitleStyleCell.m in Sources */,
 				E594D29E1AB46A180011DCA3 /* QuestionDetailController.m in Sources */,
 				E59420661AAF7D3E0005FD22 /* SEQuestion.m in Sources */,
+				E5C6E8121AB5865D00C98193 /* NSLayoutConstraint+DTOHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
