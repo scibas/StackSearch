@@ -6,12 +6,10 @@
 //  Copyright (c) 2015 Pawel Scibek. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
-@class SEQuestion;
+@import UIKit;
 
 @interface QuestionDetailController : UIViewController
 
--(instancetype)initWithQuestion:(SEQuestion *)question;
+-(void)loadUrl:(NSURL *)url;
 
 @end

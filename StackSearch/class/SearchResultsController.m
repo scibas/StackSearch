@@ -31,7 +31,7 @@ static NSString *const kTableViewCellReuseIdentifier = @"TableViewCellReuseIdent
 -(void)viewDidLoad{
     [super viewDidLoad];
     
-    self.title = NSLocalizedString(@"StackSearch", @"StackSearch");
+    self.title = NSLocalizedString(@"Search", @"Search");
     [self.tableView registerClass:[SubtitleStyleCell class] forCellReuseIdentifier:kTableViewCellReuseIdentifier];
     
     //refresh control
@@ -141,9 +141,15 @@ static NSString *const kTableViewCellReuseIdentifier = @"TableViewCellReuseIdent
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     SEQuestion *selectedQuestion = self.response.items[indexPath.row];
-    QuestionDetailController *questionDitailController = [[QuestionDetailController alloc] initWithQuestion:selectedQuestion];
+    QuestionDetailController *questionDitailController = [[QuestionDetailController alloc] init];
+    [questionDitailController loadUrl:[NSURL URLWithString:selectedQuestion.link]];
+
+    UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:questionDitailController];
     
-    [self.navigationController pushViewController:questionDitailController animated:YES];
+    questionDitailController.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
+    self.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
+
+    [self showDetailViewController:navc sender:self];
 }
 
 @end

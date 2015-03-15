@@ -7,39 +7,33 @@
 //
 
 #import "QuestionDetailController.h"
-#import "SEQuestion.h"
-
-@interface QuestionDetailController()
-@property(nonatomic, weak, readonly) UIWebView *webView;
-@property(nonatomic, strong) SEQuestion *question;
-@end
+@import WebKit;
 
 @implementation QuestionDetailController
 
--(instancetype)initWithQuestion:(SEQuestion *)question{
-    NSParameterAssert(question);
-    self = [super init];
-    if(self) {
-        _question = question;
-    }
-    return self;
-}
-
 -(void)loadView{
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectZero];
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:CGRectZero];
     webView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     
     self.view = webView;
 }
 
 -(void)viewDidLoad{
-    NSURL *url = [[NSURL alloc] initWithString:self.question.link];
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
-    [self.webView loadRequest:request];
+    [super viewDidLoad];
+    
+    self.title = NSLocalizedString(@"Question", @"Question");
+    
+    self.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
+    self.navigationItem.leftItemsSupplementBackButton = YES;
 }
 
--(UIWebView *)webView{
-    return (UIWebView*) self.view;
+-(void)loadUrl:(NSURL *)url{
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    [(UIWebView *)self.view loadRequest:request];
+}
+
+-(void)dealloc{
+    NSLog(@"DEALOC DETAIS VC");
 }
 
 @end

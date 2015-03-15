@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "SearchResultsController.h"
 #import "AFNetworkActivityIndicatorManager.h"
-
+#import "QuestionDetailController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,13 +19,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
-    
-    SearchResultsController *searchresultController = [[SearchResultsController alloc]initWithStyle:UITableViewStyleGrouped];
-    
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:searchresultController];
+
+    UISplitViewController *splitViewController = [[UISplitViewController alloc] init];
+    UIViewController *masterViewController = [[SearchResultsController alloc]initWithStyle:UITableViewStyleGrouped];
+    UIViewController *detailViewController = [[QuestionDetailController alloc] init];
+    splitViewController.viewControllers = @[[[UINavigationController alloc] initWithRootViewController:masterViewController],
+                                            [[UINavigationController alloc] initWithRootViewController:detailViewController]];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = navigationController;
+    self.window.rootViewController = splitViewController;
     
     [self.window makeKeyAndVisible];
     
